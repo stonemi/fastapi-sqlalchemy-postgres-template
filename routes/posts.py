@@ -30,7 +30,6 @@ def get_all_posts(db: Session = Depends(get_db)):
 def get_one_post(id, db: Session = Depends(get_db)):
     return post_get_one(db=db, id=id)
 
-
 @router.delete(
     "/delete/{id}", status_code=status.HTTP_200_OK, response_model=DeletePostResponse
 )

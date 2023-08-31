@@ -9,7 +9,8 @@ class HealthResponse(BaseModel):
 
 
 class Post(BaseModel):
-    id: Optional[UUID]
+    #id: Optional[UUID]
+    id: str
     title: str
     description: str
 
